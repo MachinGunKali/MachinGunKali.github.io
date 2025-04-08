@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Background.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>widget meteo</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1><img src="logo.webp" /></h1>
+
+      <div class="item">
+        <div class="text-city">
+          <label for="city">Entrer une ville pour commencer :</label>
+        </div>
+        <div class="champ-de-caractere">
+          <input type="text" id="city" placeholder="Exemple: Paris" />
+        </div>
+        <button id="getWeather">Obtenir la météo</button>
+      </div>
+      <div id="weatherResult"></div>
+    </div>
+    <div class="sugg-card">
+      <div class="suggestions">
+        <h2>Suggestions de vêtements</h2>
+        <p id="seasonText">Saison actuelle : <span id="season"></span></p>
+        <ul id="clothingList"></ul>
+      </div>
+    </div>
+
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script src="script.js"></script>
+    <script src="data_base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb/dist/pouchdb.min.js"></script>
+  </body>
+</html>
